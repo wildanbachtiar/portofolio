@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import heroAsset from "@/assets/avatar.png";
-import bgAsset from "@/assets/bg2.png";
-import cardShopeeAsset from "@/assets/card-shopee.png";
-import cardFikaAsset from "@/assets/card-fika.png";
-import cardStickerAsset from "@/assets/card-sticker.png";
-import cardBedugAsset from "@/assets/card-bedug.png";
+import heroAsset from "@/assets/avatar.webp";
+import bgAsset from "@/assets/bg2.webp";
+import cardShopeeAsset from "@/assets/card-shopee.webp";
+import cardFikaAsset from "@/assets/card-fika.webp";
+import cardStickerAsset from "@/assets/card-sticker.webp";
+import cardBedugAsset from "@/assets/card-bedug.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -192,6 +192,8 @@ function Hero() {
           <motion.img
             src={heroAsset}
             alt="Wildan memoji waving"
+            fetchPriority="high"
+            decoding="async"
             className="h-32 w-32 object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)] sm:h-32 sm:w-32 lg:mb-[-12px] lg:h-56 lg:w-56"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
