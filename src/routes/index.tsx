@@ -11,10 +11,10 @@ import cardBedugAsset from "@/assets/card-bedug.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Porto Wildan — Personal Link Hub" },
-      { name: "description", content: "Premium personal link hub by Wildan Bachtiar. Discover curated links, collections and creations." },
-      { property: "og:title", content: "Porto Wildan — Personal Link Hub" },
-      { property: "og:description", content: "Premium personal link hub by Wildan Bachtiar." },
+      { title: "Porto — Wildan" },
+      { name: "description", content: "Portfolio of Wildan Bachtiar" },
+      { property: "og:title", content: "Porto — Wildan" },
+      { property: "og:description", content: "Portfolio of Wildan Bachtiar" },
     ],
   }),
   component: Index,

@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Porto — Wildan" },
-      { name: "description", content: "Portofolio by Wildan Bachtiar" },
+      { name: "description", content: "Portfolio of Wildan Bachtiar" },
       { name: "author", content: "Wildan Bachtiar" },
       { property: "og:title", content: "Porto — Wildan" },
-      { property: "og:description", content: "Portofolio by Wildan Bachtiar" },
+      { property: "og:description", content: "Portfolio of Wildan Bachtiar" },
       { property: "og:type", content: "website" },
     ],
     links: [
